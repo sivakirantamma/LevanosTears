@@ -1,0 +1,59 @@
+<embed src="silence.mp3" hidden="true" loop="true" auto-start="true">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon"/>
+    <title>The Peer</title>
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+      <div class="title">
+        <h1>Levonas Tears</h1>
+      </div>
+      <hr style="width:80%;">
+      <div class="topnav">
+        <ul class="ul">
+              <li class="li"><a  class="active" class="anchor" href="#home">Home</a></li>
+              <li class="li"><a class="anchor" href="">Child Abuse</a></li>
+              <li class="li"><a class="anchor" href="">Levonas Tears</a></li>
+              <li class="li"><a class="anchor" href="">Parenting</a></li>
+              <li class="li"><a class="anchor" href="">Community</a></li>
+              <li class="li"><a class="anchor" href="">About</a></li>
+        </ul>
+
+      </div>
+      <br>
+      <br><br>
+      <br>
+
+
+      <div class="slide">
+        <img src="./images/image4.jpg" id="rotator" style="width:100%; height:100%;" alt="rotatingimage"  ></p>
+          <script type="text/javascript">
+          (function(){
+          var rotator=document.getElementById('rotator');
+          var imageDir='images/';
+          var delayInSeconds=3;
+          var images=['image1.jpg','image3.jpg','image5.jpg','image7.jpg','image8.jpg','image9.jpg','image6.jpg','image2.jpg'];
+          var num=0;
+          var changeImage=function()
+          {
+          var len=images.length;
+          rotator.src=imageDir+images[num++];
+          if(num==len)
+          {
+          num=0;
+          }
+          };
+          setInterval(changeImage,delayInSeconds*1000);
+          })();
+          </script>
+      </div>
+
+
+      <div class="footer">
+        <p>All Copyrights Reserved. Levonas Tears © 2017</p>
+      </div>
+  </body>
+</html>
